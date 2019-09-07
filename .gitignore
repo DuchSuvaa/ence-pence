@@ -1,0 +1,7 @@
+# Files
+.ftpconfig
+
+# Folders
+
+node_modules/
+*.mp4

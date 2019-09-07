@@ -1,0 +1,108 @@
+/* css reset */
+
+body, html, div, p, span, a, table, tr, td, th, form, ul, li, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* colors */
+
+$black: #453D3B;
+$white: #F6FBF9;
+$green: #7BC4A5;
+$brown: #783E34;
+
+/* general styles */
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Kalam', cursive;
+}
+
+html {
+  font-size: 10px;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: calc(3px + 0.75vw);
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+header {
+  justify-content: space-between;
+  position: relative;
+  nav {
+    border-bottom: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -2.5rem);
+    a {
+      display: none;
+      &.activeTab {
+        display: block;
+        margin-bottom: 1.8rem;
+        border-radius: 5px;
+      }
+    }
+  }
+  .social {
+  }
+}
+
+/* main */
+
+.main {
+  > div:nth-child(3) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    div:nth-child(3) {
+      order: 2;
+    }
+    div:nth-child(4) {
+      order: 1;
+    }
+    div:nth-child(5) {
+      order: 3;
+    }
+    div:nth-child(6) {
+      order: 4;
+    }
+  }
+}
+
+/* author */
+
+@media (max-width: 650px) {
+  .author {
+    flex-direction: column;
+    .author-side {
+      width: 100%;
+    }
+    .author-text {
+      width: 100%;
+    }
+  }
+}
+
+
+
+@media (max-width: 785px) {
+  footer {
+    > div {
+      div:first-child {
+        width: 60%;
+      }
+      div:nth-child(2) {
+        width: 40%;
+      }
+    }
+  }
+}
