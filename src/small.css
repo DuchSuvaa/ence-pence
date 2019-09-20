@@ -36,24 +36,42 @@ html {
 
 header {
   justify-content: space-between;
-  position: relative;
   nav {
-    border-bottom: none;
+    z-index: 1;
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -2.5rem);
+    top: 14rem;
+    left: 0;
+    background-color: $white;
+    border-bottom: 0;
+    width: 100%;
+    padding: 0;
     a {
-      display: none;
-      &.activeTab {
-        display: block;
-        margin-bottom: 1.8rem;
-        border-radius: 5px;
-      }
+      width: 100%;
+      text-align: center;
+      height: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
+      margin-right: 0 !important;
+      margin: 0 !important;
+    }
+    a:hover {
+      border-radius: 0;
+    }
+    .activeTab {
+      border-radius: 0 !important;
+      margin-right: 0;
     }
   }
   .social {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    width: 6rem;
   }
 }
 
@@ -80,6 +98,35 @@ header {
 
 /* author */
 
+@media (max-width: 850px) {
+}
+
+.contact {
+  flex-direction: column;
+  > div {
+    width: 100%;
+    &:first-child {
+      margin-bottom: 2rem;
+      a {
+
+      }
+    }
+  }
+}
+
+@media (max-width: 785px) {
+  footer {
+    > div {
+      div:first-child {
+        width: 60%;
+      }
+      div:nth-child(2) {
+        width: 40%;
+      }
+    }
+  }
+}
+
 @media (max-width: 650px) {
   .author {
     flex-direction: column;
@@ -92,17 +139,69 @@ header {
   }
 }
 
-
-
-@media (max-width: 785px) {
-  footer {
+@media (max-width: 555px) {
+  .page-secondary-photo {
+    display: block;
+    float: left;
+    max-width: 20rem;
+    margin-right: 1.5rem;
+  }
+  .page-primary-photo {
+    display: none;
+  }
+  .about {
     > div {
       div:first-child {
-        width: 60%;
+        width: 0;
       }
       div:nth-child(2) {
-        width: 40%;
+        width: 100%;
       }
+    }
+  }
+  footer {
+    > div {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Lato', sans-serif;
+      font-size: 1.6rem;
+      ul:first-child {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+      }
+      div:nth-child(2) {
+        width: 100%;
+        text-align: left;
+        margin-top: 2rem;
+      }
+    }
+  }
+  .main {
+    margin-top: 4rem;
+    > div:nth-child(3) {
+      div {
+        svg, img {
+          max-height: 8rem;
+        }
+      }
+    }
+  }
+  .contact {
+    > div {
+      &:first-child {
+        a {
+          font-size: 2.8rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 355px) {
+  footer {
+    > div {
+      font-size: 1.4rem !important;
     }
   }
 }

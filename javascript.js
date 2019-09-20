@@ -1,36 +1,24 @@
 $(function() {
 
+  $(".hamburger").click(function() {
+    $("nav").toggle();
+  });
+
 let width = $(window).width();
 
-$(".activeTab").click(function() {
-  if (width < 1000) {
-    event.preventDefault();
-    $(".activeTab").parent().css("flex-direction", "column-reverse");
-    $(".activeTab").css("order", "1");
-    $("nav a").toggle();
-    $(".activeTab").show();
-  }
-});
-
 $(window).resize(function() {
+  let width = $(window).width(); // ??
   if (width > 1000) {
-    $(".activeTab").show();
-    $("nav a").show();
+    $("nav").show(); // ??
+    $("nav").css("display", "flex");
+  }
+  else {
+    $("nav").hide();
   }
 });
 
-$("#play-video").click(function() {
-  $("#ence-pence-video").trigger("play").attr('controls',true);
-  $("#play-video").hide();
-});
-
-let vid = document.getElementById('ence-pence-video')
-
-vid.addEventListener('ended', function(e) {
-  this.load();
-  $("#play-video").show();
-  $("#ence-pence-video").attr('controls',false);
-}, false);
+let fb_width = $("#facebook").width();
+$(".fb-page").attr("data-width", fb_width);
 
 
 });

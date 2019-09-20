@@ -39,6 +39,7 @@ header {
   align-items: center;
   justify-content: space-between;
   font-size: 2.1rem;
+  height: 10.8rem;
 }
 
 header .logo {
@@ -55,6 +56,7 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     z-index: 1;
   }
 
@@ -93,9 +95,13 @@ header .social a {
       transform: translateY(12%)
     }
 
-header .social a:first-child {
+header .social a:first-child, header .social a:nth-child(2) {
   margin-right: 2rem;
 }
+
+header .hamburger {
+    display: none;
+  }
 
 .page {
   margin: auto;
@@ -190,7 +196,6 @@ footer > div div:nth-child(2) {
 
 .main > div:nth-child(3) {
     margin-top: 4rem;
-    height: 67rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -202,8 +207,20 @@ footer > div div:nth-child(2) {
       height: 100%;
       width: 100%;
       font-size: 2.5rem;
-      padding: 2rem
+      padding: 5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
+
+.main > div:nth-child(3) div svg, .main > div:nth-child(3) div img {
+      }
+
+.main > div:nth-child(3) div span {
+        margin-top: 4.5rem;
+        text-align: center;
+      }
 
 .main > div:nth-child(3) div:nth-child(odd) {
   background-color: #453D3B;
@@ -217,13 +234,19 @@ footer > div div:nth-child(2) {
 
 /* about */
 
+.page-secondary-photo {
+  display: none;
+}
+
 .about {
   width: 95%;
   max-width: 1000px;
   margin: auto;
+  font-family: 'Lato', sans-serif;
 }
 
 .about > div {
+    font-weight: 300;
     margin-top: 4rem;
     display: flex;
     align-items: center;
@@ -243,10 +266,10 @@ footer > div div:nth-child(2) {
 .about > div div:nth-child(2) {
       padding: 2rem;
       width: 65.5%;
-      font-family: 'Lato', sans-serif;
       font-size: 2.2rem;
       line-height: 2.7rem;
       font-weight: 300;
+      color: #453D3B;
     }
 
 .about > div div:nth-child(2) h2 {
@@ -279,6 +302,10 @@ footer > div div:nth-child(2) {
           font-weight: 700;
           color: #453D3B;
         }
+
+.about > div div:nth-child(2) ol {
+        font-weight: 300;
+      }
 
 .about > div:nth-child(3) {
     margin-bottom: 2rem;
@@ -401,3 +428,19 @@ footer > div div:nth-child(2) {
   justify-content: center;
   background-color: #453D3B;
 }
+
+#facebook .fb-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+#facebook .fb-page span {
+      width:100%;
+    }
+
+#facebook .fb-page span iframe {
+        width: 100%;
+      }
