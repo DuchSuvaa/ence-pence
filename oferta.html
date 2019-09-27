@@ -11,6 +11,7 @@
 	<link href="dest/small.css" rel="stylesheet" media="(max-width: 1000px)"  type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="javascript.js"></script>
+	<script src="services.js"></script>
 	<meta charset="UTF-8">
 </head>
 
@@ -21,10 +22,10 @@
 	<a href="index.html" class="logo"><img src="img/logo.png" alt="logo ence-pence"></a>
 
 	<nav>
-		<a href="index.html" class="activeTab">strona główna</a>
+		<a href="index.html">strona główna</a>
 		<a href="ozajeciach.html">o zajęciach</a>
 		<a href="oautorce.html">o autorce</a>
-		<a href="oferta.html">oferta</a>
+		<a href="oferta.html" class="activeTab">oferta</a>
 		<a href="kontakt.html">kontakt</a>
 	</nav>
 
@@ -70,15 +71,556 @@
 
 	<div class="services-container">
 
-		<div class="services-tales">
+		<ul class="services-choose">
+
+			<li class="choose tales active-choice choice-visible">
+				Muzyczny Świat Bajek i Baśni
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
+				  <path id="Polygon_5" data-name="Polygon 5" d="M7.5,0,15,13H0Z" transform="translate(15 13) rotate(180)" fill="#fff"/>
+				</svg>
+			</li>
+
+			<li class="choose travel">
+				Muzyczna Podróż po Świecie
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
+					<path id="Polygon_5" data-name="Polygon 5" d="M7.5,0,15,13H0Z" transform="translate(15 13) rotate(180)" fill="#fff"/>
+				</svg>
+			</li>
+
+			<li class="choose nature">
+				Muzyczne Spotkania z Naturą
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
+					<path id="Polygon_5" data-name="Polygon 5" d="M7.5,0,15,13H0Z" transform="translate(15 13) rotate(180)" fill="#fff"/>
+				</svg>
+			</li>
+
+		</ul>
+
+		<div class="services-main tales-full">
+
+			<div class="darkening">
+
+			</div>
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" class="arrow-services arrow-left">
+				<g id="Polygon_2" data-name="Polygon 2" transform="translate(0 47) rotate(-90)" fill="#407860">
+					<path d="M 46.1984977722168 47.5 L 0.801501452922821 47.5 L 23.5 1.137109398841858 L 46.1984977722168 47.5 Z" stroke="none"/>
+					<path d="M 23.5 2.274208068847656 L 1.602996826171875 47 L 45.39700317382812 47 L 23.5 2.274208068847656 M 23.5 0 L 47 48 L 0 48 L 23.5 0 Z" stroke="none" fill="#fff"/>
+				</g>
+			</svg>
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="arrow-services arrow-right">
+				<g transform="translate(50) rotate(90)" fill="#407860">
+					<path d="M 49.19098663330078 49.5 L 0.8090149760246277 49.5 L 25 1.118029952049255 L 49.19098663330078 49.5 Z" stroke="none"/>
+					<path d="M 25 2.236068725585938 L 1.618034362792969 49 L 48.38196563720703 49 L 25 2.236068725585938 M 25 0 L 50 50 L 0 50 L 25 0 Z" stroke="none" fill="#fff"/>
+				</g>
+			</svg>
+
+			<div class="first-service">
+				<h3>Calineczka</h3>
+				<p>
+					Wraz z Calineczką udamy się w niezapomnianą muzyczną podróż, usłyszymy o czym śpiewa ropucha,
+					zamienimy się w motyle, poznamy rodzinę chrabąszczy, uwijemy pajęczynę z zaprzyjaźnionym pająkiem,
+					odwiedzimy dom myszki, spotkamy kreta, a na zakończenie wraz z jaskółką przeniesiemy się do magicznej
+					kwiecistej krainy.
+				</p>
+			</div>
+
+			<div>
+				<h3>Kopciuszek</h3>
+				<p>
+					Z Kopciuszkiem udamy się na bal. Uszyjemy jej piękną suknię, wystroimy się w kolorowe stroje,
+					przebrany groch posłuży nam do stworzenia muzyki, a na zakończenie odszukamy właścicielkę złotego pantofelka.
+				</p>
+			</div>
+
+			<div>
+				<h3>Bajka o rybaku i złotej rybce</h3>
+				<p>
+					Poznamy Złotą Rybkę, która nie tylko spełnia życzenia, ale wraz z rybakiem zabierze nas w niezapomnianą morską
+					przygodę. Usłyszymy jak grają morski fale, jak śpiewają syreny, a na zakończenie odpłyniemy w głębię morza jako
+					kolorowe rybki.
+				</p>
+			</div>
+
+			<div>
+				<h3>Piotruś Pan</h3>
+				<p>
+					Niesamowita muzyczna przygoda czeka nas razem z Piotrusiem Panem i jego przyjaciółmi. Pofruniemy między
+					chmurami, spotkamy przyjaznego śpiewającego krokodyla, przeżyjemy niezwykłe spotkanie z piratami oraz
+					poznamy wyjątkową muzykę Indian.
+				</p>
+			</div>
+
+			<div>
+				<h3>Czerwony Kapturek</h3>
+				<p>
+					Z Czerwonym Kapturkiem udamy się na wyprawę po lesie. Zatańczymy wraz z drzewami, doświadczymy muzyki ptaków,
+					a z pozornie niebezpiecznej sytuacji ze spotkania z wilkiem, zostaniemy uratowani przez gajowego, z którym wspólnie
+					„zjemy” pyszne smakołyki.
+				</p>
+			</div>
+
+			<div>
+				<h3>Królewna Śnieżka i 7 krasnoludków</h3>
+				<p>
+					Królewna Śnieżka, opuszczając swój zamek, zabierze nas na wyprawę przez las. Odwiedzimy wyjątkowy dom
+					krasnoludków i poznamy, na czym polega ich pracowite, pełna radości i muzyki życie. A na zakończenie uwolnimy
+					Śnieżkę od złego zaklęcia.
+				</p>
+			</div>
+
+			<div>
+				<h3>Królowa Śniegu</h3>
+				<p>
+					To magiczna opowieść o dwójce dzieci, które podczas swojej wyprawy poznały Królową Śniegu. Wspólnie z nimi
+					udamy się w muzyczny świat zimy, mrozu i śniegowych kul, a na koniec roztopimy muzyką zimne serce Królowej.
+				</p>
+			</div>
+
+			<div>
+				<h3>Alicja w Krainie Czarów</h3>
+				<p>
+					Alicja zabierze nas do swojego wyjątkowego świata po drugiej stronie lustra – poznamy niezwykłego
+					Kapelusznika, kota i królika, będziemy muzykować w czarodziejskim ogrodzie, a do wspólnej zabawy zabiorą
+					nas magiczne karty Królowej Kier.
+				</p>
+			</div>
 
 		</div>
 
-		<div class="services-travel">
+		<div class="services-main travel-full" style="display: none">
+
+			<div class="darkening">
+
+			</div>
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" class="arrow-services arrow-left">
+				<g id="Polygon_2" data-name="Polygon 2" transform="translate(0 47) rotate(-90)" fill="#407860">
+					<path d="M 46.1984977722168 47.5 L 0.801501452922821 47.5 L 23.5 1.137109398841858 L 46.1984977722168 47.5 Z" stroke="none"/>
+					<path d="M 23.5 2.274208068847656 L 1.602996826171875 47 L 45.39700317382812 47 L 23.5 2.274208068847656 M 23.5 0 L 47 48 L 0 48 L 23.5 0 Z" stroke="none" fill="#fff"/>
+				</g>
+			</svg>
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="arrow-services arrow-right">
+				<g transform="translate(50) rotate(90)" fill="#407860">
+					<path d="M 49.19098663330078 49.5 L 0.8090149760246277 49.5 L 25 1.118029952049255 L 49.19098663330078 49.5 Z" stroke="none"/>
+					<path d="M 25 2.236068725585938 L 1.618034362792969 49 L 48.38196563720703 49 L 25 2.236068725585938 M 25 0 L 50 50 L 0 50 L 25 0 Z" stroke="none" fill="#fff"/>
+				</g>
+			</svg>
+
+			<div class="first-service">
+				<h3>Polska</h3>
+				<p>
+					Spotkanie z muzyką polską rozpoczniemy od poloneza, krakowiak i mazur zabiorą nas w świat polskich zabaw
+					ludowych, zagramy wspólnie oberka oraz poznamy najpiękniejsze kujawiaki.
+				</p>
+			</div>
+
+			<div>
+				<h3>Afryka</h3>
+				<p>
+					Wybierzemy się w najdalsze zakątki Afryki w ślad za małym murzynkiem. Posłuchamy odgłosów dżungli,
+					poznamy śpiewy przeróżnych zwierząt oraz wspólnie stworzymy afrykańską orkiestrę.
+				</p>
+			</div>
+
+			<div>
+				<h3>Francja</h3>
+				<p>
+					Podróż do Francji przybliży nam najpiękniejsze akordeonowe menuety i walczyki. Zwiedzimy Luwr,
+					Wieżę Eiffla, przepłyniemy Loarą i wspólnie zagramy kankana. Usłyszymy piękne francuskie piosenki ZAZ,
+					Edith Piaf, a także Światło Księżyca Claude'a Debussego czy słynnego Łabędzie Camille'a Saint-Saensa.
+				</p>
+			</div>
+
+			<div>
+				<h3>Indie</h3>
+				<p>
+					Przeniesiemy się w muzyczny świat kolorowych Indii. Zamienimy się w zaklinaczy węży, wyruszymy
+					w poszukiwaniu najsłynniejszej indyjskiej rośliny oraz dowiemy się jakie znaczenie w Indiach ma słoń.
+				</p>
+			</div>
+
+			<div>
+				<h3>Chiny</h3>
+				<p>
+					Wyruszymy śladami chińskich zwierząt, przemierzymy mur chiński, udamy się na paradę kolorowych smoków,
+					poznamy sztukę origami i odkryjemy, że chińskie pałeczki i ryż mogą służyć nie tylko do jedzenia.
+				</p>
+			</div>
+
+			<div>
+				<h3>Bałkany</h3>
+				<p>
+					Bałkańską przygodę rozpoczniemy w Bułgarii, następnie odkryjemy kulturę Grecji, udamy się na największy
+					festiwal trąbki w Serbii, a przez Macedonię i Czarnogórę prowadzić nas będą niesamowicie energetyczne
+					bałkańskie dźwięki.
+				</p>
+			</div>
+
+			<div>
+				<h3>Austria</h3>
+				<p>
+					To kraj najpiękniejszych walców wiedeńskich, które porwą nas na prawdziwy bal. Z Marszem Radetskiego
+					Johana Straussa stworzymy wspaniałą orkiestrę, natomiast utwory Wolfganga Amadeusza Mozarta oraz polki
+					Straussów, zbiorą nas w świat beztroskiej zabawy.
+				</p>
+			</div>
+
+			<div>
+				<h3>Rosja</h3>
+				<p>
+					Razem z Dziadkiem Mrozem udamy się w świat śnieżnej Rosji. Usłyszymy fragmenty Jeziora Łabędzi Piotra
+					Czajkowskiego, poznamy historię Rybaka i Złotej Rybki oraz wspólnie zatańczymy Kalinkę – najsłynniejszy
+					rosyjski taniec.
+				</p>
+			</div>
+
+			<div>
+				<h3>Brazylia</h3>
+				<p>
+					Odwiedzimy tropikalne lasy deszczowe w poszukiwaniu amazońskiej muzyki. Udamy się na największy karnawał
+					do Rio de Janeiro, gdzie w świat brazylijskich rytmów porwie nas gorąca samba.
+				</p>
+			</div>
 
 		</div>
 
-		<div class="services-nature">
+		<div class="services-main nature-full" style="display: none">
+
+			<div class="darkening">
+
+			</div>
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" class="arrow-services arrow-left">
+				<g id="Polygon_2" data-name="Polygon 2" transform="translate(0 47) rotate(-90)" fill="#407860">
+					<path d="M 46.1984977722168 47.5 L 0.801501452922821 47.5 L 23.5 1.137109398841858 L 46.1984977722168 47.5 Z" stroke="none"/>
+					<path d="M 23.5 2.274208068847656 L 1.602996826171875 47 L 45.39700317382812 47 L 23.5 2.274208068847656 M 23.5 0 L 47 48 L 0 48 L 23.5 0 Z" stroke="none" fill="#fff"/>
+				</g>
+			</svg>
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="arrow-services arrow-right">
+				<g transform="translate(50) rotate(90)" fill="#407860">
+					<path d="M 49.19098663330078 49.5 L 0.8090149760246277 49.5 L 25 1.118029952049255 L 49.19098663330078 49.5 Z" stroke="none"/>
+					<path d="M 25 2.236068725585938 L 1.618034362792969 49 L 48.38196563720703 49 L 25 2.236068725585938 M 25 0 L 50 50 L 0 50 L 25 0 Z" stroke="none" fill="#fff"/>
+				</g>
+			</svg>
+
+			<div class="first-service">
+				<h3>Muzyka Lasu</h3>
+				<p>
+					Wybierzemy się na spacer do miejsca pełnego tajemnic, gdzie posłuchamy jak gra las, zatańczymy z drzewami,
+					a razem z ptakami będziemy snuć niezwykłe melodie.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Deszczu</h3>
+				<p>
+					Odkryjemy, w jaki sposób dźwięki deszczu, burzy i wiatru tworzą niezapomniane wrażenia  i wraz z nimi
+					spróbujemy wspólnie stworzyć deszczową orkiestrę.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Wody</h3>
+				<p>
+					Morska kraina wciągnie nas w swój podwodny świat, pokaże jakie skrywa skarby i rozkołysze nas swoimi
+					dźwiękami wody.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Ptaków</h3>
+				<p>
+					Poznamy niezwykły świat ptasich dźwięków, które wielokrotnie inspirowały największych kompozytorów
+					świata, a dziś posłużą nam do przeżywania niezapomnianej przygody.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Łąki</h3>
+				<p>
+					Posłuchamy „co piszczy w trawie” i odszukamy najcichsze dźwięki łąki, zamieniając się w różnobarwnych
+					jej mieszkańców.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Dżungli</h3>
+				<p>
+					Muzyczny świat dżungli dostarczy nam niezwykłych wrażeń, poznamy egzotyczne miejsca i dzikie zwierzęta,
+					co zaowocuje wyjątkowym wspólnym muzykowaniem.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Wiosny</h3>
+				<p>
+					Obudzona do życia przyroda pokaże nam, w jak piękny sposób wita się ze światem. Staniemy się jego częścią
+					i razem odkryjemy dźwięki wiosny.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Lata</h3>
+				<p>
+					Gorący czas letnich przygód zaprosi nas do wspólnego odkrywania słonecznych melodii, które zabiorą nas na
+					wspólną podróż.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Jesieni</h3>
+				<p>
+					Podczas spotkania z jesienią zobaczymy jak tańczą liście, posłuchamy jak grają kasztany i zaśpiewamy razem
+					z jesiennymi kroplami deszczu.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Zimy</h3>
+				<p>
+					Dowiemy się, gdzie muzyka mieszka zimą i jak łatwo można ją znaleźć. Pokaże nam jakie śpiewa melodie i nauczy
+					nas swoich śnieżnych dźwięków.
+				</p>
+			</div>
+
+			<div>
+				<h3>Muzyka Kosmosu</h3>
+				<p>
+					Podróż w kosmiczny świat, to czas niezwykłej muzyki i magicznych przeżyć, których doświadczymy, zdobywając
+					kolejne miejsca ogromnej galaktyki.
+				</p>
+			</div>
+
+		</div>
+
+		<div class="tales-bottom bottom-active">
+			Cykl zaprasza do wspólnego poznawania treści bajki w sposób twórczy i aktywny. W trakcie muzycznej przygody,
+			dzieci wcielają się w różne role, tworzą elementy scenografii, warstwę muzyczną, odzwierciedlając tym samym
+			świat ukazany w bajce.
+		</div>
+
+		<div class="travel-bottom" style="display:none">
+			Cykl zaprasza do wspólnego podróżowania w odległe zakątki świata, ale również do odkrywania kultury własnego
+			kraju. W trakcie muzycznej przygody, dzieci w sposób twórczy i aktywny stają się podróżnikami, którzy poznają
+			muzykę, zwyczaje, charakterystyczne miejsca oraz ciekawostki różnych krajów.
+		</div>
+
+		<div class="nature-bottom" style="display:none">
+			Cykl zaprasza do wspólnego doświadczania otaczającego nas świata. W trakcie muzycznej przygody, dzieci w sposób
+			twórczy i aktywny, wcielają się w różne role, tworzą elementy natury,warstwę muzyczną, odzwierciedlając tym samym
+			wszelkie zjawiska przyrody.
+		</div>
+
+		<div class="thumbnails-container">
+
+			<img src="img/arrow.svg" class="arrow-small arrow-small-left">
+
+			<div id="thumbnails">
+
+				<div data-photo="1" class="thumb">
+				  <img src="img/gallery/ence-01@0,2x.jpg"
+				  srcset="img/gallery/ence-01@0,2x.jpg 640w,
+				  img/gallery/ence-01@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="2" class="thumb">
+					<img src="img/gallery/ence-02@0,2x.jpg"
+					srcset="img/gallery/ence-02@0,2x.jpg 640w,
+					img/gallery/ence-02@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="3" class="thumb">
+					<img src="img/gallery/ence-03@0,2x.jpg"
+					srcset="img/gallery/ence-03@0,2x.jpg 640w,
+					img/gallery/ence-03@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="4" class="thumb">
+					<img src="img/gallery/ence-04@0,2x.jpg"
+					srcset="img/gallery/ence-04@0,2x.jpg 640w,
+					img/gallery/ence-04@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="5" class="thumb">
+					<img src="img/gallery/ence-05@0,2x.jpg"
+					srcset="img/gallery/ence-05@0,2x.jpg 640w,
+					img/gallery/ence-05@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="6" class="thumb">
+					<img src="img/gallery/ence-06@0,2x.jpg"
+					srcset="img/gallery/ence-06@0,2x.jpg 640w,
+					img/gallery/ence-06@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="7" class="thumb">
+					<img src="img/gallery/ence-07@0,2x.jpg"
+					srcset="img/gallery/ence-07@0,2x.jpg 640w,
+					img/gallery/ence-07@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="8" class="thumb">
+					<img src="img/gallery/ence-08@0,2x.jpg"
+					srcset="img/gallery/ence-08@0,2x.jpg 640w,
+					img/gallery/ence-08@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="9" class="thumb">
+					<img src="img/gallery/ence-09@0,2x.jpg"
+					srcset="img/gallery/ence-09@0,2x.jpg 640w,
+					img/gallery/ence-09@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="10" class="thumb">
+					<img src="img/gallery/ence-10@0,2x.jpg"
+					srcset="img/gallery/ence-10@0,2x.jpg 640w,
+					img/gallery/ence-10@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="11" class="thumb">
+					<img src="img/gallery/ence-11@0,2x.jpg"
+					srcset="img/gallery/ence-11@0,2x.jpg 640w,
+					img/gallery/ence-11@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="12" class="thumb">
+					<img src="img/gallery/ence-12@0,2x.jpg"
+					srcset="img/gallery/ence-12@0,2x.jpg 640w,
+					img/gallery/ence-12@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="13" class="thumb">
+					<img src="img/gallery/ence-13@0,2x.jpg"
+					srcset="img/gallery/ence-13@0,2x.jpg 640w,
+					img/gallery/ence-13@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="14" class="thumb">
+					<img src="img/gallery/ence-14@0,2x.jpg"
+					srcset="img/gallery/ence-14@0,2x.jpg 640w,
+					img/gallery/ence-14@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="15" class="thumb">
+					<img src="img/gallery/ence-15@0,2x.jpg"
+					srcset="img/gallery/ence-15@0,2x.jpg 640w,
+					img/gallery/ence-15@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="16" class="thumb">
+					<img src="img/gallery/ence-16@0,2x.jpg"
+					srcset="img/gallery/ence-16@0,2x.jpg 640w,
+					img/gallery/ence-16@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="17" class="thumb">
+					<img src="img/gallery/ence-17@0,2x.jpg"
+					srcset="img/gallery/ence-17@0,2x.jpg 640w,
+					img/gallery/ence-17@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="18" class="thumb">
+					<img src="img/gallery/ence-18@0,2x.jpg"
+					srcset="img/gallery/ence-18@0,2x.jpg 640w,
+					img/gallery/ence-18@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="19" class="thumb">
+					<img src="img/gallery/ence-19@0,2x.jpg"
+					srcset="img/gallery/ence-19@0,2x.jpg 640w,
+					img/gallery/ence-19@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="20" class="thumb">
+					<img src="img/gallery/ence-20@0,2x.jpg"
+					srcset="img/gallery/ence-20@0,2x.jpg 640w,
+					img/gallery/ence-20@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="21" class="thumb">
+					<img src="img/gallery/ence-21@0,2x.jpg"
+					srcset="img/gallery/ence-21@0,2x.jpg 640w,
+					img/gallery/ence-21@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="22" class="thumb">
+					<img src="img/gallery/ence-22@0,2x.jpg"
+					srcset="img/gallery/ence-22@0,2x.jpg 640w,
+					img/gallery/ence-22@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="23" class="thumb">
+					<img src="img/gallery/ence-23@0,2x.jpg"
+					srcset="img/gallery/ence-23@0,2x.jpg 640w,
+					img/gallery/ence-23@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="24" class="thumb">
+					<img src="img/gallery/ence-24@0,2x.jpg"
+					srcset="img/gallery/ence-24@0,2x.jpg 640w,
+					img/gallery/ence-24@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="25" class="thumb">
+					<img src="img/gallery/ence-25@0,2x.jpg"
+					srcset="img/gallery/ence-25@0,2x.jpg 640w,
+					img/gallery/ence-25@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="26" class="thumb">
+					<img src="img/gallery/ence-26@0,2x.jpg"
+					srcset="img/gallery/ence-26@0,2x.jpg 640w,
+					img/gallery/ence-26@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="27" class="thumb">
+					<img src="img/gallery/ence-27@0,2x.jpg"
+					srcset="img/gallery/ence-27@0,2x.jpg 640w,
+					img/gallery/ence-27@0,1x.jpg 320w">
+				</div>
+
+				<div data-photo="28" class="thumb">
+					<img src="img/gallery/ence-28@0,2x.jpg"
+					srcset="img/gallery/ence-28@0,2x.jpg 640w,
+					img/gallery/ence-28@0,1x.jpg 320w">
+				</div>
+
+			</div>
+
+			<img src="img/arrow.svg" class="arrow-small arrow-small-right">
+
+		</div>
+
+	</div>
+
+	<div id="services-conditions">
+
+		<div>
+
+			<h3>Szczegóły współpracy:</h3>
+
+			<ul>
+				<li>Spotkanie przewiduje jeden wybrany scenariusz, indywidualnie ustalany.</li>
+				<li>Czas trwania: ok. 50 – 60 min.</li>
+				<li>Ilość miejsc na zajęciach – do 25 osób ( w przypadku spotkań familijnych – do 30 dzieci).</li>
+				<li>„Ence – pence” zapewnia wszelkie materiały wykorzystywane na zajęciach oraz dysponuje niezbędnym sprzętem audio.</li>
+			</ul>
+
+		</div>
+
+		<div>
+
+			<h3>Możliwe formy zajęć:</h3>
+
+			<ol>
+				<li>zajęcia dla grup przedszkolnych i szkolnych,</li>
+				<li>zajęcia familijne – w  domach kultury, świetlicach, rodzinnych klubokawiarniach i innych miejscach przyjaznym dzieciom i rodzinom, </li>
+				<li>zajęcia okazjonalne – w placówkach oświatowych, ośrodkach kultury, muzeach, bibliotekach i wszystkich miejscach  zainteresowanych ubogaceniem swojej oferty.</li>
+			</ol>
 
 		</div>
 
@@ -108,6 +650,20 @@
 	</div>
 
 </footer>
+
+<div class="dim" style="display:none;">
+
+	<div class="arrow left"> <img src="img/arrow.svg" alt=""> </div>
+
+	<div class="preview">
+
+	</div>
+
+	<div class="arrow right"> <img src="img/arrow.svg" alt=""> </div>
+
+	<div class="close"> <img src="img/close.svg" alt=""> </div>
+
+</div>
 
 </body>
 

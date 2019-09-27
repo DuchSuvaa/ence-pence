@@ -120,6 +120,31 @@ header .hamburger {
 }
 
 @media (max-width: 785px) {
+      .services .services-container .services-choose {
+      }
+        .services .services-container .services-main > div {
+
+        }
+        .services .services-container .services-main .arrow-left {
+
+        }
+        .services .services-container .services-main .arrow-right {
+
+        }
+    .services #services-conditions {
+      margin-top: 4rem;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+      .services #services-conditions div {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        font-weight: 300;
+        width: 49%;
+      }
       footer > div div:first-child {
         width: 60%;
       }

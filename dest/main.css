@@ -10,6 +10,10 @@ body, html, div, p, span, a, table, tr, td, th, form, ul, ol, li, img, h2 {
 
 /* general styles */
 
+.remove-pointer-events {
+  pointer-events: none;
+}
+
 body {
   background-color: #F6FBF9;
   font-family: 'Lato', sans-serif;
@@ -29,6 +33,83 @@ html {
     font-size: 8px;
   }
 }
+
+.dim {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dim .arrow {
+    position: absolute;
+    top: 50%;
+    width: 60px; height: 60px;
+    transform: translateY(-50%);
+    z-index: 99;
+  }
+
+.dim .arrow img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      transition: opacity 0.8s;
+      cursor: pointer;
+      z-index: 99;
+    }
+
+.dim .arrow img:hover {
+      opacity: 1;
+    }
+
+.dim .left {
+    left: 20px;
+  }
+
+.dim .right {
+    right: 20px;
+  }
+
+.dim .right img {
+      transform: rotate(180deg);
+    }
+
+.dim .preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+.dim .preview div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+
+.dim .preview div img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+.dim .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+.dim .close img {
+      width: 100%;
+      height: 100%;
+    }
 
 header {
   width: 95%;
@@ -395,6 +476,245 @@ footer > div div:nth-child(2) {
       font-family: 'Kalam', cursive;
       color: white;
       font-weight: 700;
+    }
+
+/* services */
+
+.services {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.services .services-container {
+    font-size: 4rem;
+    position: relative;
+  }
+
+.services .services-container .services-choose {
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(69,61,59,.93);
+      color: white;
+    }
+
+.services .services-container .services-choose .choose {
+        user-select: none;
+        z-index: 1;
+        display: none;
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 5.6rem;
+        cursor: pointer
+      }
+
+.services .services-container .services-choose .choose:hover {
+  background-color: rgba(169,161,159,.13);
+}
+
+.services .services-container .services-choose .choose svg {
+          display: none;
+          margin-bottom: 0.3rem;
+}
+
+.services .services-container .services-choose .active-choice {
+        display: block !important;
+        order: 1 !important
+      }
+
+.services .services-container .services-choose .active-choice:hover {
+  background-color: rgba(169,161,159,.13);
+}
+
+.services .services-container .services-choose .active-choice svg {
+          display: inline-block;
+}
+
+.services .services-container .services-choose .tales {
+        order: 2;
+      }
+
+.services .services-container .services-choose .travel {
+        order: 3;
+      }
+
+.services .services-container .services-choose .nature {
+        order: 4;
+      }
+
+.services .services-container .services-choose .choice-visible {
+        display: block !important;
+      }
+
+.services .services-container .services-main {
+      font-family: 'Lato', sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      overflow-x: hidden;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      padding-top: 5.6rem;
+      flex: 0 0 auto;
+      position: relative;
+      background-size: cover;
+      background-position: 50% 0;
+      text-shadow: 0 0 2px black;
+    }
+
+.services .services-container .services-main > div {
+        width: 100%;
+        min-width: 100%;
+        height: 100%;
+        padding: 8rem 16.3%;
+        z-index: 2;
+      }
+
+.services .services-container .services-main .darkening {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        margin-top: 5.6rem;
+        background-color: rgba(50,50,50,.5);
+      }
+
+.services .services-container .services-main .first-service {
+        margin-left: 0;
+        transition: margin-left 0.35s;
+      }
+
+.services .services-container .services-main .arrow-left {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        z-index: 6;
+      }
+
+.services .services-container .services-main .arrow-right {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        z-index: 6;
+      }
+
+.services .services-container .tales-full { background-image: url("../img/cykl-1.png"); }
+
+.services .services-container .travel-full { background-image: url("../img/cykl-2.png"); }
+
+.services .services-container .nature-full { background-image: url("../img/cykl-3.png"); }
+
+.services .services-container .services-bottom {
+      display: none;
+    }
+
+.services .services-container .bottom-active {
+      font-family: 'Lato', sans-serif;
+      background-color: #453D3B;
+      width: 100%;
+      display: block;
+      font-size: 2rem;
+      line-height: 2.7rem;
+      color: white;
+      font-weight: 300;
+      padding: 2rem;
+    }
+
+.services #services-conditions {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+.services #services-conditions div {
+      font-size: 2rem;
+      line-height: 2.7rem;
+      font-weight: 300;
+      width: 100%
+    }
+
+.services #services-conditions div:nth-child(2) {
+  margin-top: 4rem;
+}
+
+.services #services-conditions div h3 {
+        margin-top: 0;
+        color: #783E34;
+}
+
+.services #services-conditions div ul, .services #services-conditions div ol {
+        font-family: 'Lato', sans-serif;
+}
+
+.services #services-conditions div ul li, .services #services-conditions div ol li {
+          margin-left: 2.2rem;
+        }
+
+.thumbnails-container {
+  background-color: #453D3B;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.thumbnails-container .arrow-small {
+    cursor: pointer;
+    user-select: none;
+  }
+
+.thumbnails-container .arrow-small-right {
+    transform: rotate(180deg);
+  }
+
+.thumbnails-container #thumbnails {
+    user-select: none;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+.thumbnails-container #thumbnails > div:nth-child(1) {
+      margin-left: 0;
+      transition: margin-left 0.35s;
+    }
+
+.thumbnails-container #thumbnails .thumb {
+      min-width: 19.1%;
+      max-width: 19.1%;
+      margin-right: 0.8rem;
+      filter: saturate(.2);
+      transition: filter .5s;
+      cursor: zoom-in;
+    }
+
+.thumbnails-container #thumbnails .thumb img {
+        display: block;
+        width: 100%;
+      }
+
+.thumbnails-container #thumbnails .thumb:hover {
+      filter: saturate(.8);
     }
 
 /* contact */

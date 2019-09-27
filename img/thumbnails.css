@@ -1,0 +1,94 @@
+.active {
+  border: 5px solid #6AC180;
+  box-sizing: border-box;
+  padding-bottom: calc(100% - 10px) !important;
+}
+
+.concert {background-image: url("../img/services/concert_01@0,1x.jpg");}
+
+.workshop {background-image: url("../img/services/workshop_01@0,1x.jpg");}
+
+#services {
+  .servicesItem:nth-child(4) {
+    .thumbnails {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 1rem;
+      grid-row-gap: 1rem;
+      div:nth-child(1) {background-image: url("../img/services/concert_01@0,1x.jpg");}
+      div:nth-child(2) {background-image: url("../img/services/concert_02@0,1x.jpg");}
+      div:nth-child(3) {background-image: url("../img/services/concert_03@0,1x.jpg");}
+      div:nth-child(4) {background-image: url("../img/services/concert_04@0,1x.jpg");}
+      div:nth-child(5) {background-image: url("../img/services/concert_05@0,1x.jpg");}
+      div:nth-child(6) {background-image: url("../img/services/concert_06@0,1x.jpg");}
+      div:nth-child(7) {background-image: url("../img/services/concert_07@0,1x.jpg");}
+      div:nth-child(8) {background-image: url("../img/services/concert_08@0,1x.jpg");}
+      div:nth-child(9) {background-image: url("../img/services/concert_09@0,1x.jpg");}
+      div:nth-child(10) {background-image: url("../img/services/concert_10@0,1x.jpg");}
+      div:nth-child(11) {background-image: url("../img/services/concert_11@0,1x.jpg");}
+      div:nth-child(12) {background-image: url("../img/services/concert_12@0,1x.jpg");}
+      div:nth-child(13) {background-image: url("../img/services/concert_13@0,1x.jpg");}
+      div:nth-child(14) {background-image: url("../img/services/concert_14@0,1x.jpg");}
+      div:nth-child(15) {background-image: url("../img/services/concert_15@0,1x.jpg");}
+      div:nth-child(16) {background-image: url("../img/services/concert_16@0,1x.jpg");}
+      div:nth-child(17) {background-image: url("../img/services/concert_17@0,1x.jpg");}
+      div:nth-child(18) {background-image: url("../img/services/concert_18@0,1x.jpg");}
+      div:nth-child(19) {background-image: url("../img/services/concert_19@0,1x.jpg");}
+      div:nth-child(20) {background-image: url("../img/services/concert_20@0,1x.jpg");}
+      div:nth-child(21) {background-image: url("../img/services/concert_21@0,1x.jpg");}
+      div:nth-child(22) {background-image: url("../img/services/concert_22@0,1x.jpg");}
+      div:nth-child(23) {background-image: url("../img/services/concert_23@0,1x.jpg");}
+      div:nth-child(24) {background-image: url("../img/services/concert_24@0,1x.jpg");}
+      div:nth-child(25) {background-image: url("../img/services/concert_25@0,1x.jpg");}
+      div:nth-child(26) {background-image: url("../img/services/concert_26@0,1x.jpg");}
+      div:nth-child(27) {background-image: url("../img/services/concert_27@0,1x.jpg");}
+      div:nth-child(28) {background-image: url("../img/services/concert_28@0,1x.jpg");}
+      div:nth-child(29) {background-image: url("../img/services/concert_29@0,1x.jpg");}
+      div:nth-child(30) {background-image: url("../img/services/concert_30@0,1x.jpg");}
+      div:nth-child(31) {background-image: url("../img/services/concert_31@0,1x.jpg");}
+      div:nth-child(32) {background-image: url("../img/services/concert_32@0,1x.jpg");}
+      div:nth-child(33) {background-image: url("../img/services/concert_33@0,1x.jpg");}
+      div:nth-child(34) {background-image: url("../img/services/concert_34@0,1x.jpg");}
+      div:nth-child(35) {background-image: url("../img/services/concert_35@0,1x.jpg");}
+      div:nth-child(36) {background-image: url("../img/services/concert_36@0,1x.jpg");}
+      div:nth-child(37) {background-image: url("../img/services/concert_37@0,1x.jpg");}
+      div:nth-child(38) {background-image: url("../img/services/concert_38@0,1x.jpg");}
+      div:nth-child(39) {background-image: url("../img/services/concert_39@0,1x.jpg");}
+      div:nth-child(40) {background-image: url("../img/services/concert_40@0,1x.jpg");}
+      div:nth-child(41) {background-image: url("../img/services/concert_41@0,1x.jpg");}
+      div:nth-child(42) {background-image: url("../img/services/concert_42@0,1x.jpg");}
+      div:nth-child(43) {background-image: url("../img/services/concert_43@0,1x.jpg");}
+      div:nth-child(44) {background-image: url("../img/services/concert_44@0,1x.jpg");}
+      div:nth-child(45) {background-image: url("../img/services/concert_45@0,1x.jpg");}
+      div:nth-child(46) {background-image: url("../img/services/concert_46@0,1x.jpg");}
+      div:nth-child(47) {background-image: url("../img/services/concert_47@0,1x.jpg");}
+      div:nth-child(48) {background-image: url("../img/services/concert_48@0,1x.jpg");}
+      div:nth-child(49) {background-image: url("../img/services/concert_49@0,1x.jpg");}
+    }
+  }
+
+  .servicesItem:nth-child(5) {
+    .thumbnails {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 1rem;
+      grid-row-gap: 1rem;
+      div:nth-child(1) {background-image: url("../img/services/workshop_01@0,1x.jpg");}
+      div:nth-child(2) {background-image: url("../img/services/workshop_02@0,1x.jpg");}
+      div:nth-child(3) {background-image: url("../img/services/workshop_03@0,1x.jpg");}
+      div:nth-child(4) {background-image: url("../img/services/workshop_04@0,1x.jpg");}
+      div:nth-child(5) {background-image: url("../img/services/workshop_05@0,1x.jpg");}
+      div:nth-child(6) {background-image: url("../img/services/workshop_06@0,1x.jpg");}
+      div:nth-child(7) {background-image: url("../img/services/workshop_07@0,1x.jpg");}
+      div:nth-child(8) {background-image: url("../img/services/workshop_08@0,1x.jpg");}
+      div:nth-child(9) {background-image: url("../img/services/workshop_09@0,1x.jpg");}
+      div:nth-child(10) {background-image: url("../img/services/workshop_10@0,1x.jpg");}
+      div:nth-child(11) {background-image: url("../img/services/workshop_11@0,1x.jpg");}
+      div:nth-child(12) {background-image: url("../img/services/workshop_12@0,1x.jpg");}
+      div:nth-child(13) {background-image: url("../img/services/workshop_13@0,1x.jpg");}
+      div:nth-child(14) {background-image: url("../img/services/workshop_14@0,1x.jpg");}
+    }
+  }
+}
