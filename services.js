@@ -163,9 +163,12 @@ $(".arrow-small").click(function() {
     $(this).parent().find("div:nth-child(1)").css("marginLeft", marginValue);
   }
 
-
-  if ((containerWidth * 3) == (currentMargin * -1)) {
-    $(".arrow-small-right").css('visibility','hidden');
+  if ($(this).hasClass("arrow-small-right")) {
+    if ((containerWidth * 3) == (currentMargin * -1)) {
+      $(".arrow-small-right").css('visibility','hidden');
+    }
+  } else {
+    $(".arrow-small-right").css('visibility','visible');
   }
 
   if ($(this).is(".arrow-small-left") && containerWidth == (currentMargin * -1)) {

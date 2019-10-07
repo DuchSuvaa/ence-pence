@@ -176,12 +176,19 @@ header {
 footer {
   background-color: #EDF7F3;
   padding: 2rem 0;
+  a {
+    text-decoration: none;
+    color: $brown;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   > div {
     width: 95%;
     max-width: 1000px;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
@@ -192,11 +199,7 @@ footer {
       align-items: center;
       justify-content: center;
       a {
-        text-decoration: none;
         color: $black;
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
     div {
@@ -514,7 +517,7 @@ footer {
         width: 100%;
         height: 100%;
         margin-top: 5.6rem;
-        background-color: rgba(50,50,50,.5);
+        background-image: radial-gradient(rgba(0,0,0, .9), rgba(0,0,0, .2));
       }
       .first-service {
         margin-left: 0;

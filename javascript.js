@@ -15,6 +15,9 @@ $(window).resize(function() {
   else {
     $("nav").hide();
   }
+  if (width < 500) {
+    $( "div[data-photo='1']" ).css("marginLeft", "0");
+  }
 });
 
 let fb_width = $("#facebook").width();
