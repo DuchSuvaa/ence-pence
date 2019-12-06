@@ -239,6 +239,7 @@ footer > div div:nth-child(2) {
 
 .main {
   margin-top: 4rem;
+  position: relative;
 }
 
 .main > div:first-child {
@@ -268,7 +269,114 @@ footer > div div:nth-child(2) {
       padding-left: 10px;
     }
 
-.main > div:nth-child(2) {
+.main > #events {
+      width: 100%;
+    }
+
+.main > #events > div:first-child {
+        background-color: #7BC4A5;
+        font-size: 4.6rem;
+        line-height: 10.1rem;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        color: #453D3B;
+      }
+
+.main > #events #events-content {
+          height: 100px;
+          overflow: hidden;
+        }
+
+.main > #events #events-content .event {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+.main > #events #events-content .event .event-date {
+                    width: 16.6666%;
+                    background-color: #783E34;
+                    padding-top: 16.6666%;
+                    position: relative;
+                }
+
+.main > #events #events-content .event .event-date span:first-child {
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 58%;
+                        font-size: 5rem;
+                        line-height: 5rem;
+                        color: white;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                    }
+
+.main > #events #events-content .event .event-date span:last-child {
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height:38%;
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        color: white;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                    }
+
+.main > #events #events-content .event .event-content {
+                    width: 83.3333%;
+                    font-size: 2.15rem;
+                    font-family: "Lato", sans-serif;
+                    color: #453D3B;
+                    padding: 3rem;
+                }
+
+.main > #events #events-content .event .event-content a {
+                        color: #7BC4A5;
+                    }
+
+.main > #events #events-content .event:nth-child(even) .event-date {
+                    background-color: #915B51;
+                }
+
+.main > #events > div:nth-child(3) {
+            text-align: center;
+            font-family: "Lato", sans-serif;
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            line-height: 7.5rem;
+            color: #453D3B;
+            background-color: #E6E6E6;
+            cursor: pointer;
+            transition: background-color 0.15s;
+            border-radius: 5px;
+        }
+
+.main > #events > div:nth-child(3) .triangle {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-left: 0.5rem solid transparent;
+                border-right: 0.5rem solid transparent;
+                border-top: 0.9rem solid #453D3B;
+                margin-bottom: 0.25rem;
+                margin-left: -0.1rem;
+            }
+
+.main > #events > div:nth-child(3):hover {
+  background-color: #E1E1E1;
+  transition: background-color 0.5s;
+}
+
+.main > #quote {
     background-color: #EDF7F3;
     height: 44rem;
     display: flex;
@@ -277,9 +385,16 @@ footer > div div:nth-child(2) {
     font-size: 3.5rem;
     line-height: 5.6rem;
     font-weight: 300;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    width: 500%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 4rem;
   }
 
-.main > div:nth-child(3) {
+.main > #features {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -288,7 +403,7 @@ footer > div div:nth-child(2) {
     margin-bottom: 4rem;
   }
 
-.main > div:nth-child(3) div {
+.main > #features div {
       height: 100%;
       width: 100%;
       font-size: 2.5rem;
@@ -299,20 +414,20 @@ footer > div div:nth-child(2) {
       justify-content: center;
     }
 
-.main > div:nth-child(3) div svg, .main > div:nth-child(3) div img {
+.main > #features div svg, .main > #features div img {
       }
 
-.main > div:nth-child(3) div span {
+.main > #features div span {
         margin-top: 4.5rem;
         text-align: center;
       }
 
-.main > div:nth-child(3) div:nth-child(odd) {
+.main > #features div:nth-child(odd) {
   background-color: #453D3B;
   color: white;
 }
 
-.main > div:nth-child(3) div:nth-child(even) {
+.main > #features div:nth-child(even) {
   background-color: white;
   color: #453D3B;
 }

@@ -92,7 +92,7 @@ header {
 /* main */
 
 .main {
-  > div:nth-child(3) {
+  > #features {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     div:nth-child(3) {
@@ -108,12 +108,53 @@ header {
       order: 4;
     }
   }
+  #events {
+    #events-content {
+        .event {
+            .event-date {
+                span:nth-child(1) {
+                    font-size: 5rem;
+                    line-height: 5rem;
+                }
+                span:nth-child(2) {
+                    font-size: 2.5rem;
+                    line-height: 2.5rem;
+                }
+            }
+            .event-content {
+                font-size: 2.2rem;
+                padding: 2rem;
+            }
+        }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+    .main {
+        #events {
+            #events-content {
+                .event {
+                    .event-date {
+                        span:nth-child(1) {
+                            font-size: 3rem;
+                            line-height: 3rem;
+                        }
+                        span:nth-child(2) {
+                            font-size: 1.5rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                    .event-content {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* author */
-
-@media (max-width: 850px) {
-}
 
 .contact {
   flex-direction: column;
